@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function flipCard() {
-        let cardId = this.getAttribute('data-id');
+        const cardId = this.getAttribute('data-id');
         if (!cardsChosenId.includes(cardId)) {
             cardsChosen.push(cardArray[cardId].name);
             cardsChosenId.push(cardId);
